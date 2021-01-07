@@ -8,7 +8,11 @@ const clientConfig = require('./client-config')
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://blog.thecounterviews.com',
+  },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     {
