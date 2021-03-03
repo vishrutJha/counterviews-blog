@@ -28,6 +28,7 @@ function BlogPostPreview (props) {
       </div>
       <div className={styles.text}>
         <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
+        <div className={styles.date}>{props.categories.map( cat => cat.title).join(", ")}</div>
         {props._rawExcerpt && (
           <div className={styles.excerpt}>
             <PortableText blocks={props._rawExcerpt} />
