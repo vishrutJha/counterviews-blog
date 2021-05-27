@@ -13,13 +13,13 @@ export default {
               sites: [
                 {
                   buildHookId: '5ed40a65987c7a594e356908',
-                  title: 'Sanity Studio',
+                  title: 'CounterViews Admin',
                   name: 'counterviews-blog-studio',
                   apiId: '0ef549a3-129b-4c9e-a83b-d4458db2ab98'
                 },
                 {
                   buildHookId: '5ed40a65d52d63c248ecbcc9',
-                  title: 'Blog Website',
+                  title: 'TheCounterViews',
                   name: 'counterviews-blog',
                   apiId: '4170dbcf-c13d-4b55-a9ec-92ee9be3009f'
                 }
@@ -33,7 +33,7 @@ export default {
             value: 'https://github.com/vishrutJha/counterviews-blog',
             category: 'Code'
           },
-          { title: 'Frontend', value: 'https://counterviews-blog.netlify.app', category: 'apps' }
+          { title: 'Frontend', value: 'https://blog.thecounterviews.com', category: 'apps' }
         ]
       }
     },
