@@ -1,6 +1,7 @@
 import {format, distanceInWords, differenceInDays} from 'date-fns'
 import React from 'react'
-import {buildImageObj} from '../lib/helpers'
+import {Link} from 'gatsby'
+import {buildImageObj, getCategoryUrl} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
 import PortableText from './portableText'
 import Container from './container'
@@ -44,8 +45,13 @@ function BlogPost (props) {
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>
                 <ul>
-                  {categories.map(category => (
-                    <li key={category._id}>{category.title}</li>
+                  {categories.map(category => (                    
+                    <Link
+                      className={styles.categories}
+                      to={getCategoryUrl(category.slug.current)}
+                    >
+                      <li key={category._id}>{category.title}</li>
+                    </Link>
                   ))}
                 </ul>
               </div>
