@@ -80,10 +80,13 @@
 
   @nest & ul li {
     padding: 0.25rem 0;
-    a {
-      text-decoration: none;
-    }
   }
+}
+
+ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-gray);
 }
 
 .categoriesHeadline {
