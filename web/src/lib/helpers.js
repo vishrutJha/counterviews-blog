@@ -21,6 +21,10 @@ export function getBlogUrl (publishedAt, slug) {
   return `/blog/${format(publishedAt, 'YYYY/MM')}/${slug.current || slug}/`
 }
 
+export function getCategoryUrl (slug) {
+  return `/categories/${slug.current || slug}/`
+}
+
 export function buildImageObj (source = {asset: {}}) {
   const imageObj = {
     asset: {_ref: source.asset._ref || source.asset._id}
