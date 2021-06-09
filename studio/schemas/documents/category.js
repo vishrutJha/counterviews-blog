@@ -9,9 +9,13 @@ export default {
       title: 'Title'
     },
     {
-      name: 'description',
-      type: 'text',
-      title: 'Description'
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      options: {
+        source: 'title',
+        maxLength: 96
+      }
     },
     {
       name: 'mainImage',
@@ -26,12 +30,9 @@ export default {
         'This ends up on summary pages, on Google, when people share this page in social media.'
     },
     {
-      name: 'slug',
-      type: 'slug',
-      title: 'Slug',
-      option: {
-        source: 'title'
-      }
-    },
+      name: 'description',
+      type: 'bodyPortableText',
+      title: 'Description'
+    }
   ]
 }
