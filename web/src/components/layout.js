@@ -11,7 +11,8 @@ const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
-          &copy; {new Date().getFullYear()}, Built by <a href='https://vishrutjha.in'>Vishrut Jha</a>
+          Authored by Dr. Sumangala Jha (chief editor) and Dr. Vidya Nath Jha<br/>
+          &copy; {new Date().getFullYear()}, Built by <a href='https://vishrutjha.in' target='_blank'>Vishrut Jha</a>
         </div>
       </div>
     </footer>
