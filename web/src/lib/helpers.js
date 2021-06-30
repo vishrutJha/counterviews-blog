@@ -25,6 +25,10 @@ export function getCategoryUrl (slug) {
   return `/categories/${slug.current || slug}/`
 }
 
+export function getIssueUrl (slug) {
+  return `/issues/${slug.current || slug}/`
+}
+
 export function buildImageObj (source = {asset: {}}) {
   const imageObj = {
     asset: {_ref: source.asset._ref || source.asset._id}

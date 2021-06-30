@@ -21,7 +21,7 @@
   border-top: 1px solid var(--hairline-color);
 
   @media (--screen-medium) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
