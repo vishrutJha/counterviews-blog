@@ -16,7 +16,7 @@ function CategoryPreviewGrid (props) {
         {props.nodes &&
           props.nodes.map(node => (
             <li key={node.id}>
-              <CategoryPreview {...node} />
+              <CategoryPreview {...node} iType={props.iType} />
             </li>
           ))}
       </ul>
@@ -30,6 +30,7 @@ function CategoryPreviewGrid (props) {
 }
 
 CategoryPreviewGrid.defaultProps = {
+  iType: 'category',
   title: '',
   nodes: [],
   browseMoreHref: ''

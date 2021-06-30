@@ -111,7 +111,39 @@ async function createCategoryPages (graphql, actions) {
     })
 }
 
+async function createIssuePages (graphql, actions) {
+  const {createPage} = actions
+  const result = await graphql(`{
+    allSanityIssue {
+      nodes {
+        slug {
+          current
+        }
+        id
+      }
+    }
+  }
+  `)
+  if (result.errors) throw result.errors
+
+  const issueNodes = (result.data.allSanityIssue || {}).nodes || []
+
+  issueNodes
+    .forEach((node) => {
+      const {id, slug = {}} = node
+      if (!slug) return
+
+      const path = `/issues/${slug.current}`
+      createPage({
+        path,
+        component: require.resolve('./src/templates/issue.js'),
+        context: {id}
+      })
+    })
+}
+
 exports.createPages = async ({graphql, actions}) => {
   await createBlogPostPages(graphql, actions)
   await createCategoryPages(graphql, actions)
+  await createIssuePages(graphql, actions)
 }

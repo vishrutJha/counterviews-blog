@@ -1,7 +1,7 @@
 import {format} from 'date-fns'
 import {Link} from 'gatsby'
 import React from 'react'
-import {buildImageObj, cn, getCategoryUrl} from '../lib/helpers'
+import {buildImageObj, cn, getCategoryUrl, getIssueUrl} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
 
 import styles from './blog-post-preview.module.css'
@@ -15,7 +15,7 @@ function CategoryPreview (props) {
   return (
     <Link
       className={props.isInList ? styles.inList : styles.inGrid}
-      to={getCategoryUrl(props.slug.current)}
+      to={ props.iType == "issue" ? getIssueUrl(props.slug.current) : getCategoryUrl(props.slug.current)}
     >
       <div className={styles.leadMediaThumb}>
         {props.mainImage && props.mainImage.asset && (
