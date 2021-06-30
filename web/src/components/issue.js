@@ -1,9 +1,13 @@
 import {format, distanceInWords, differenceInDays} from 'date-fns'
 import React from 'react'
+import {useLocation} from '@reach/router'
 import {buildImageObj} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
+
+import ShareButtons from "./share"
 import PortableText from './portableText'
 import Container from './container'
+
 import BlogPostPreviewGrid from '../components/blog-post-preview-list'
 
 import styles from './category.module.css'
@@ -28,9 +32,15 @@ function Issue (props) {
       <Container>
         <div className={styles.grid}>
           <div className={styles.mainContent}>
-            <h1 className={styles.title}>{title}</h1>
+            <h1 className={styles.title}>{title}</h1>            
+            <div>
+              <ShareButtons title={title} url={useLocation().href}/>
+            </div>
             {_rawDescription && <PortableText blocks={_rawDescription} />}
-            {posts && posts.length > 0 && <BlogPostPreviewGrid nodes={posts} />}
+            {posts && posts.length > 0 && <BlogPostPreviewGrid nodes={posts} />}            
+            <div>
+              <ShareButtons title={title} url={useLocation().href}/>
+            </div>
           </div>
         </div>
       </Container>
