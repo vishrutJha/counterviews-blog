@@ -33,11 +33,11 @@ function BlogPost (props) {
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>                        
             <div>
-              <ShareButtons title={props.title} url={window.location.href}/>
+              <ShareButtons title={props.title} url={document.location.href}/>
             </div>
             {_rawBody && <PortableText blocks={_rawBody} />}            
             <div>
-              <ShareButtons title={props.title} url={window.location.href}/>
+              <ShareButtons title={props.title} url={document.location.href}/>
             </div>
           </div>
           <aside className={styles.metaContent}>
