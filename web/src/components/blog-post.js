@@ -1,5 +1,6 @@
 import {format, distanceInWords, differenceInDays} from 'date-fns'
 import React from 'react'
+import { useLocation } from '@reach/router'
 import {Link} from 'gatsby'
 import {buildImageObj, getCategoryUrl} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
@@ -33,11 +34,11 @@ function BlogPost (props) {
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>                        
             <div>
-              <ShareButtons title={props.title} url={document.location.href}/>
+              <ShareButtons title={props.title} url={useLocation().href}/>
             </div>
             {_rawBody && <PortableText blocks={_rawBody} />}            
             <div>
-              <ShareButtons title={props.title} url={document.location.href}/>
+              <ShareButtons title={props.title} url={useLocation().href}/>
             </div>
           </div>
           <aside className={styles.metaContent}>
