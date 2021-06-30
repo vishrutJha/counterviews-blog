@@ -1,0 +1,8 @@
+.react-share__ShareButton {
+  margin-right: 1rem;
+}
+
+.react-share__ShareButton a svg:hover rect {
+  fill: var(--link-color) !important;
+}
+ 

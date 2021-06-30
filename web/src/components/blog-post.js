@@ -3,6 +3,8 @@ import React from 'react'
 import {Link} from 'gatsby'
 import {buildImageObj, getCategoryUrl} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
+
+import ShareButtons from "./share"
 import PortableText from './portableText'
 import Container from './container'
 import AuthorList from './author-list'
@@ -25,12 +27,18 @@ function BlogPost (props) {
             alt={mainImage.alt}
           />
         </div>
-      )}
+      )}      
       <Container>
         <div className={styles.grid}>
           <div className={styles.mainContent}>
-            <h1 className={styles.title}>{title}</h1>
-            {_rawBody && <PortableText blocks={_rawBody} />}
+            <h1 className={styles.title}>{title}</h1>                        
+            <div>
+              <ShareButtons title={props.title} url={window.location.href}/>
+            </div>
+            {_rawBody && <PortableText blocks={_rawBody} />}            
+            <div>
+              <ShareButtons title={props.title} url={window.location.href}/>
+            </div>
           </div>
           <aside className={styles.metaContent}>
             {publishedAt && (
@@ -40,7 +48,7 @@ function BlogPost (props) {
                   : format(new Date(publishedAt), 'MMMM Do, YYYY')}
               </div>
             )}
-            {authors && <AuthorList items={authors} title='Authors' />}
+            {authors && <AuthorList items={authors} title='Authors' />}            
             {categories && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>
