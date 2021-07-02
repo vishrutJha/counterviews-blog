@@ -19,13 +19,15 @@ export default {
       options: {
         source: 'title',
         maxLength: 96
-      }
+      },
+      validation: Rule => Rule.required()
     },
     {
       name: 'publishedAt',
       type: 'datetime',
       title: 'Published at',
-      description: 'This can be used to schedule post for publishing'
+      description: 'This can be used to schedule post for publishing',
+      validation: Rule => Rule.required()
     },
     {
       name: 'mainImage',
@@ -106,8 +108,7 @@ export default {
       media: 'mainImage'
     },
     prepare ({title = 'No title', publishedAt, slug = {}, media}) {
-      const dateSegment = format(publishedAt, 'YYYY/MM')
-      const path = `/${dateSegment}/${slug.current}/`
+      const path = `/articles/${slug.current}/`
       return {
         title,
         media,

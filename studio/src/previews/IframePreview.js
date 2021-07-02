@@ -4,11 +4,6 @@ import PropTypes from 'prop-types'
 import { format } from 'date-fns'
 import styles from './IframePreview.module.css'
 
-/**
- * Explore more examples of previews:
- * https://www.sanity.io/blog/evolve-authoring-experiences-with-views-and-split-panes
- */
-
 const assemblePostUrl = ({ displayed, options }) => {
   const { slug, publishedAt } = displayed
   const { previewURL } = options
@@ -16,9 +11,7 @@ const assemblePostUrl = ({ displayed, options }) => {
     console.warn('Missing slug or previewURL', { slug, previewURL })
     return ''
   }
-  const dateSegment = format(publishedAt, 'YYYY/MM')
-  const path = `/${dateSegment}/${slug.current}/`
-  return `${previewURL}/blog${path}`
+  return `${previewURL}/articles/${slug.current}/`
 }
 
 const IframePreview = props => {
