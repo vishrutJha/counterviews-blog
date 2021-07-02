@@ -20,7 +20,7 @@ export default {
                 {
                   buildHookId: '5ed40a65d52d63c248ecbcc9',
                   title: 'TheCounterViews',
-                  name: 'counterviews-blog',
+                  name: 'thecounterviews-articles',
                   apiId: '4170dbcf-c13d-4b55-a9ec-92ee9be3009f'
                 }
               ]
