@@ -9,7 +9,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://blog.thecounterviews.com',
+    siteUrl: 'https://articles.thecounterviews.com',
   },
   plugins: [
     'gatsby-plugin-sitemap',
