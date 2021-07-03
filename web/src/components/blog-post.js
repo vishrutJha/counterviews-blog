@@ -67,6 +67,10 @@ function BlogPost (props) {
             )}
           </aside>
         </div>
+        <div className={styles.browseMoreNav}>
+          <Link to='/archive/'>Read More Articles</Link><br/>
+          <Link to='/issues/'>View Other Issues</Link>
+        </div>
       </Container>
     </article>
   )
