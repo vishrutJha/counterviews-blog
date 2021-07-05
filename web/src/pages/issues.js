@@ -12,6 +12,7 @@ import {responsiveTitle1} from '../components/typography.module.css'
 export const query = graphql`
   query IssuePageQuery {
     issues: allSanityIssue(
+      sort: { fields: [publishedAt], order: DESC }
       filter: { slug: { current: { ne: null } }}
       ) {
       edges {
