@@ -19,6 +19,7 @@ export const query = graphql`
         alt
       }
       title
+      documentUrl
       _rawDescription(resolveReferences: {maxDepth: 5})
       posts {
         id

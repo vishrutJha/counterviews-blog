@@ -17,7 +17,11 @@ import {
 
 import styles from './share.module.css'
 
-const ShareButtons = ({title, url}) => {
+const ShareButtons = ({title, url, issue=false, issueUrl=null}) => {
+
+  const downloadFile = () => {
+    window.open(issueUrl, '_blank')
+  }
 
   return(
     <div>
@@ -44,6 +48,11 @@ const ShareButtons = ({title, url}) => {
       <EmailShareButton subject={title} body="Check out this interesting Article I found " url={url} >
         <EmailIcon  size={40} round={true}/>
       </EmailShareButton>
+      { 
+        (issue && issueUrl) ? <span className={styles.pullRight}>
+          <button className={styles.btnFab} onClick={downloadFile}>↓</button>
+        </span> :''
+      }
     </div>
   )
 

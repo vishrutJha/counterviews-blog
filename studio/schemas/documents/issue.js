@@ -15,6 +15,11 @@ export default {
       option: {
         source: 'title'
       }
+    },    
+    {
+      name: 'documentUrl',
+      type: 'string',
+      title: 'Document URL'
     },
     {
       name: 'mainImage',
