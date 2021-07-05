@@ -35,17 +35,21 @@ function Issue (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            <div className={styles.downloadPdf}>
-              <Link to={documentUrl}> ↓ View this Issue as PDF </Link><br/>
-            </div>
+            {documentUrl ? 
+               <div className={styles.downloadPdf}>
+                <Link target="_blank" to={documentUrl}> ↓ View / Download this Issue as PDF </Link><br/>
+              </div> : ''
+            }
             <div>
               <ShareButtons title={title} url={useLocation().href} />
             </div>
             {_rawDescription && <PortableText blocks={_rawDescription} />}
             {posts && posts.length > 0 && <BlogPostPreviewGrid nodes={posts} />}
-            <div className={styles.downloadPdf}>
-              <Link to={documentUrl}> ↓ View / Download this Issue as PDF </Link><br/>
-            </div>
+            {documentUrl ? 
+               <div className={styles.downloadPdf}>
+                <Link target="_blank" to={documentUrl}> ↓ View / Download this Issue as PDF </Link><br/>
+              </div> : ''
+            }
             <div>
               <ShareButtons title={title} url={useLocation().href} />
             </div>
