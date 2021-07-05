@@ -22,6 +22,13 @@ export default {
       title: 'Document URL'
     },
     {
+      name: 'publishedAt',
+      type: 'datetime',
+      title: 'Published at',
+      description: 'This can be used to schedule post for publishing',
+      validation: Rule => Rule.required()
+    },
+    {
       name: 'mainImage',
       type: 'mainImage',
       title: 'Main image'
