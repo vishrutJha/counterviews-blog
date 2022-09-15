@@ -8,7 +8,7 @@ import styles from './header.module.css'
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
-      <Link to='/'><img src="https://thecounterviews.com/images/counterviews.png" height="35px"/></Link>
+      <Link to='/'><img src="https://imgur.com/eicEHv8.png" height="35px"/></Link>
       <div className={styles.branding}>
         <Link to='/'>{siteTitle}</Link>
       </div>
