@@ -67,6 +67,11 @@
 
 .blockQuote {
   background: var(--color-very-light-gray);
+  margin: 0;
+  padding: 1em;
+  border-radius: 1em;
+  font-weight: 400;
+  font: 1.2rem/1.4 sans-serif, serif;
 }
 
 .responsiveTitle1 {

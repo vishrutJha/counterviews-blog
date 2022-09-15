@@ -21,8 +21,6 @@
   font-size: var(--font-small-size);
   margin: 1rem 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   @nest & > div:last-child {
     flex: 1;

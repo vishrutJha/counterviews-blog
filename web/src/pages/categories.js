@@ -51,7 +51,7 @@ const CategoryPage = props => {
     <Layout>
       <SEO title='Categories' />
       <Container>
-        <h1 className={responsiveTitle1}>Categories</h1>
+        <center><h1 className={responsiveTitle1}>Topics</h1></center>
         {categoryNodes && categoryNodes.length > 0 && <CategoryPreviewGrid nodes={categoryNodes} />}
       </Container>
     </Layout>
