@@ -25,7 +25,7 @@ const ShareButtons = ({title, url}) => {
         <FacebookIcon  size={40} round={true}/>
       </FacebookShareButton>
 
-      <TwitterShareButton url={url} title={title} via="drjhavn1">
+      <TwitterShareButton url={url} title={title} via="TCounterviews">
         <TwitterIcon  size={40} round={true} />
       </TwitterShareButton>
 
