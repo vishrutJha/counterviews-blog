@@ -8,7 +8,7 @@ import {
 import IframePreview from '../previews/IframePreview'
 
 // Web preview configuration
-const remoteURL = 'https://articles.thecounterviews.com'
+const remoteURL = 'https://thecounterviews.in'
 const localURL = 'http://localhost:8000'
 const previewURL =
   window.location.hostname === 'localhost' ? localURL : remoteURL

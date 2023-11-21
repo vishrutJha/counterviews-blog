@@ -33,7 +33,7 @@ export default {
             value: 'https://github.com/vishrutJha/counterviews-blog',
             category: 'Code'
           },
-          { title: 'Frontend', value: 'https://articles.thecounterviews.com', category: 'apps' }
+          { title: 'Frontend', value: 'https://thecounterviews.in', category: 'apps' }
         ]
       }
     },

@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/assets/pdfs/*"
-  to = "https://archive.thecounterviews.com/assets/pdfs/:splat"
+  to = "https://archive.thecounterviews.in/assets/pdfs/:splat"
   status = 301

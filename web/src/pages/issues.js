@@ -59,7 +59,7 @@ const IssuePage = props => {
         <h2 className={responsiveTitle3}>Previous Issues (Archives)</h2><hr/>
         <ul className={styles.list}>
           {prevIssues.map(function(d,ix){
-            return(<li><h4><a style={{"text-decoration": "none", color: "inherit"}} href={"https://archive.thecounterviews.com/"+d.link} target="_blank" key={ix}>{d.name}  ›</a></h4></li>)
+            return(<li><h4><a style={{"text-decoration": "none", color: "inherit"}} href={"https://archive.thecounterviews.in/"+d.link} target="_blank" key={ix}>{d.name}  ›</a></h4></li>)
           })}
         </ul>
       </Container>

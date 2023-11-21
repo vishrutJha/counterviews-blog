@@ -4,6 +4,6 @@
   status = 200
 
 [[redirects]]
-  from = "https://blog.thecounterviews.com/"
-  to = "https://articles.thecounterviews.com/"
+  from = "https://blog.thecounterviews.in/"
+  to = "https://thecounterviews.in/"
   status = 301
