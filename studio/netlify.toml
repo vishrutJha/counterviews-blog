@@ -3,7 +3,3 @@
   to = "/"
   status = 200
 
-[[redirects]]
-  from = "https://blog.thecounterviews.in/"
-  to = "https://thecounterviews.in/"
-  status = 301
