@@ -35,7 +35,7 @@ module.exports = {
         // This config will be shared across all trackingIds
         gtagConfig: {
           optimize_id: "OPT_CONTAINER_ID",
-          anonymize_ip: false,
+          anonymize_ip: true,
           cookie_expires: 0,
         },
         // This object is used for configuration specific to this plugin
@@ -46,8 +46,6 @@ module.exports = {
           respectDNT: true,
           // Avoids sending pageview hits from custom paths
           exclude: ["/preview/**", "/do-not-track/me/too/"],
-          // localStorage key that has to be set to true for plugin to load
-          optinKey: "gtag_optin", // default
         },
       },
     },
