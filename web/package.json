@@ -24,20 +24,22 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.0",
-    "gatsby": "^5.13.7",
+    "gatsby": "^6.13.7",
     "gatsby-plugin-postcss": "^6.13.1",
     "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-image": "^4.13.1",
+    "gatsby-plugin-sharp": "^7.13.1",
+    "gatsby-transformer-sharp": "^7.13.1",
     "gatsby-source-sanity": "^7.9.1",
     "postcss-import": "^16.1.0",
     "postcss-preset-env": "^10.0.8",
     "prettier-eslint-cli": "^8.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^5.2.1"
   },
   "dependencies": {
-    "gatsby-image": "^2.0.41",
-    "gatsby-plugin-google-gtag": "^5.13.1",
+    "gatsby-plugin-google-gtag": "^6.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
     "react-share": "^4.4.0"
   }
