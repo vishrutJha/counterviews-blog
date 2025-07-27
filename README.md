@@ -13,11 +13,12 @@ Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-i
 ## Quick start
 
 1. Clone this repository
-2. `npm install` in the project root folder on local
+2. `npm install` in the project root folder on local (requires Node 18 or higher)
 3. `npm run dev` to start the studio and frontend locally
    - Your studio should be running on [http://localhost:3333](http://localhost:3333)
    - Your frontend should be running on [http://localhost:8000](http://localhost:8000)
 4. `npm run build` to build to production locally
+   - The site now uses `gatsby-plugin-image` for optimized images
 
 ## Enable real-time content preview on development
 
