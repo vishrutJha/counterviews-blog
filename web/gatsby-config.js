@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sitemap',
     'gatsby-plugin-postcss',
+    'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
@@ -47,7 +48,7 @@ module.exports = {
           // Avoids sending pageview hits from custom paths
           exclude: ["/preview/**", "/do-not-track/me/too/"],
           // localStorage key that has to be set to true for plugin to load
-          optinKey: "gtag_optin", // default
+          // optinKey: "gtag_optin", // default
         },
       },
     },

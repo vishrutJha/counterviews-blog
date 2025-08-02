@@ -9,19 +9,13 @@ export default {
             name: 'netlify',
             options: {
               description:
-                'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
+                'NOTE: Automated Deployments are in place, however, If you don\'t see the update, please click below to deploy manually',
               sites: [
                 {
-                  buildHookId: '5ed40a65987c7a594e356908',
-                  title: 'CounterViews Admin',
-                  name: 'counterviews-blog-studio',
-                  apiId: '0ef549a3-129b-4c9e-a83b-d4458db2ab98'
-                },
-                {
-                  buildHookId: '5ed40a65d52d63c248ecbcc9',
+                  buildHookId: '688d8ea2152c945ec2ed8a80',
                   title: 'TheCounterViews',
-                  name: 'thecounterviews-articles',
-                  apiId: '4170dbcf-c13d-4b55-a9ec-92ee9be3009f'
+                  name: 'theCounterViews-Site',
+                  apiId: 'e3b327b8-45ac-4de6-a03d-ca1cb7fdf559'
                 }
               ]
             }
@@ -30,10 +24,11 @@ export default {
         data: [
           {
             title: 'GitHub repo',
-            value: 'https://github.com/vishrutJha/counterviews-blog',
+            value: 'https://github.com/vishrutJha/counterviews-ssg',
             category: 'Code'
           },
-          { title: 'Frontend', value: 'https://thecounterviews.in', category: 'apps' }
+          { title: 'Frontend', value: 'https://thecounterviews.in', category: 'apps' },
+          { title: 'Frontend', value: 'https://thecounterviews.com', category: 'apps' }
         ]
       }
     },
